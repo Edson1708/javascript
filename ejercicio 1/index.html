@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora del día</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="cargar()">
+    <header>
+        <h1>Hora del día</h1>
+    </header>
+    <main>
+        <section class="ejercicio_hora">
+            <div id="msg">
+                aqui aparece la hora
+            </div>
+            <div id="foto">
+                <img id="imagen" src="imagenes/mañana.jpg" alt="mañana">
+            </div>
+        </section>
+        <h1>verificador de edad</h1>
+        <section class="ejercicio_edad">
+            <div>
+                <p>Año de nacimiento
+                    <input type="number" name="txtedad" id="extedad" min="0" max="100">
+                </p>
+                <p>Sexo
+                    <input type="radio" name="radsex" id="masc" checked>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Femenino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+            </div>
+            <div id="res">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Edson Ramiro Calle Mayta</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

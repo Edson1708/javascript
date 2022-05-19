@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso del DOM</title>
+    <style>
+        body{
+            background-color: rgb(2, 143, 143);
+            color: white;
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso del DOM</h1>
+    <p>Aqui va el resultado</p>
+    <p>Aprendiend a usar el <strong>DOM</strong> en javascript</p>
+    <div class="msg">click aqui</div>
+    <script>
+        var cuerpo= document.body;
+        var p1 = document.getElementsByTagName("p")[1];
+        //document.write(document.URL);
+        // document.write("texto guardado dentro de una variable => "+p1.innerText);
+        p1.style.color='blue';
+        // cuerpo.style.backgroundColor='black';
+        // document.write("texto con tags => "+p1.innerHTML);
+        // var d = document.getElementById("msg");
+        // d.style.backgroundColor ="green";
+        // d.innerText="cambie de texto";
+        var d = document.querySelector("div.msg");
+        d.style.color="red";
+    </script>
+</body>
+</html>

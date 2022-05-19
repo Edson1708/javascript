@@ -1,0 +1,38 @@
+body{
+font: normal 1.4em black;
+}
+header{
+text-align: center;
+color: white;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+section{
+background-color: white;
+width: 500px;
+margin: auto;
+border-radius: 10px;
+box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.37);
+padding: 15px;
+
+}
+section.ejercicio_edad{
+margin-top: 20px;
+}
+div#foto,div#msg{
+    text-align: center;
+    padding: 10px;
+}
+#foto img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+}
