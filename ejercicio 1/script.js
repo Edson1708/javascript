@@ -59,3 +59,51 @@ function verificar() {
         res.appendChild(img);
     }
 }
+function contar(){
+    let inicio = document.getElementById('txti');
+    let fin = document.getElementById('txtf');
+    let salto = document.getElementById('txts');
+    let res = document.getElementById('resul');
+    if (inicio.value.length ==0 || fin.value.length ==0 || salto.value.length ==0) {
+        alert('falta datos');
+        res.innerHTML = 'Imposible contar';
+    }else{
+        res.innerHTML = 'Contando: ';
+        let i = Number(inicio.value);
+        let f = Number(fin.value);
+        let s = Number(salto.value);
+        if (s<=0) {
+            alert('salto invalido, considerando paso 1');
+            s=1;
+        }
+        if (i<f) {
+            for(var c=i;c<=f;c+=s){
+                res.innerHTML += `${c} \u{1F449}`;
+            }
+        }else{
+            for(var c=i;c>=f;c-=s){
+                res.innerHTML += `${c} \u{1F449}`;
+            }
+            
+        }
+        res.innerHTML+=`\u{1F3C1}`;
+    }
+}
+function tabla(){
+    let num = document.getElementById('numero');
+    let tab = document.getElementById('seltab');
+    if (num.value.length == 0) {
+        alert('Campos vacíos');
+    }else{
+        n = Number(num.value);
+        let c=1;
+        tab.innerText = '';
+        while (c<=10) {
+            let item = document.createElement('option');
+            item.text = `${n} X ${c} = ${c*n}`; 
+            tab.appendChild(item);
+            c++;
+        }
+    }
+
+}
